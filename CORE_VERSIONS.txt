@@ -1,0 +1,27 @@
+Black Hole bundled core manifest
+================================
+
+Black Hole version: 0.2.9
+Target: Windows 10/11 x64
+
+Xray core:
+  Version: v26.3.27 (latest stable release at packaging time)
+  Official archive SHA-256:
+    d004c39288ce9ada487c6f398c7c545f7d749e44bdfdd59dbc9f865afba4e1ad
+
+Desync core:
+  Bundle commit:
+    5b8b17f7b47894ca0b523de1da1806161a52d061
+  Official bundle archive SHA-256:
+    075604d8689a31e84cea1d189b11fbe4ed5634948d8264eeb983a7cb3877602e
+
+Bundled file SHA-256 checksums:
+  15c2d007954ac53ba69b80ec91242786b3c0b71d52649165b4ca1d5cc96ef8f1  core/xray/xray.exe
+  744c97b74c52bae2ac8664fef6ac481d7765cb8432a0df54f0368a88b9b4a354  core/xray/geoip.dat
+  adf92de0cfc70e458b399f04c5f912bf42d115ed7e37281b30e2f1c68605e4e9  core/xray/geosite.dat
+  31d3188d63757d89a22a16ee397f9bffae5e6150e86f00160ab9c50d3a107d4d  core/desync/winws2.exe
+  103104a52e5293ce418944725df19e2bf81ad9269b9a120d71d39028e821499b  core/desync/cygwin1.dll
+  06c3f201b815a5798816e8c15b925b28f3c38e5aba31efedec10af9e598ce723  core/desync/WinDivert.dll
+  8da085332782708d8767bcace5327a6ec7283c17cfb85e40b03cd2323a90ddc2  core/desync/WinDivert64.sys
+  2740b1bc0e728c4283846df94783844082eabd503ce1f86e3429159e1b4e8de3  core/desync/lua/engine-lib.lua
+  7f1dfbd77fa7b778626010e35e1b2172c5827d9ebc36cec0ffc19451780860fb  core/desync/lua/engine-antidpi.lua

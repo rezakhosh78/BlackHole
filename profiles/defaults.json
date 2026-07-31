@@ -1,0 +1,15 @@
+{
+  "profile": "balanced",
+  "splitMode": "multisplit",
+  "splitPositions": "1,midsld",
+  "fooling": "badseq",
+  "badSequence": -10000,
+  "autoTtlDelta": 2,
+  "autoTtlMin": 3,
+  "autoTtlMax": 20,
+  "repeats": 1,
+  "fakeSni": "",
+  "socksPort": 1819,
+  "httpPort": 1920,
+  "systemProxy": true
+}
