@@ -1,37 +1,37 @@
-name: Create Release ZIP
+name: Manual Release ZIP
 
 on:
-  push:
-    tags:
-      - "v*"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version (example: v1.0.0)"
+        required: true
+        default: "v1.0.0"
 
 permissions:
   contents: write
 
 jobs:
   release:
-    name: Build ZIP Release
+    name: Create ZIP Release
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Create ZIP archive
+      - name: Create ZIP
         run: |
-          zip -r BlackHole-${{ github.ref_name }}.zip . \
+          zip -r BlackHole-${{ github.event.inputs.version }}.zip . \
           -x ".git/*" \
           -x ".github/*"
 
-      - name: Create GitHub Release
+      - name: Create Release
         uses: ncipollo/release-action@v1
         with:
-          tag: ${{ github.ref_name }}
-          name: BlackHole ${{ github.ref_name }}
+          tag: ${{ github.event.inputs.version }}
+          name: BlackHole ${{ github.event.inputs.version }}
           body: |
-            Automated release for ${{ github.ref_name }}
-
-            Repository:
-            https://github.com/rezakhosh78/BlackHole
+            Manual release created from GitHub Actions.
           artifacts: |
-            BlackHole-${{ github.ref_name }}.zip
+            BlackHole-${{ github.event.inputs.version }}.zip
