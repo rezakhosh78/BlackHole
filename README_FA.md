@@ -10,6 +10,14 @@
 > داری. اجرای برنامه به دسترسی Administrator نیاز دارد، چون برای پردازش بسته‌ها از
 > ابزارهای سطح سیستم استفاده می‌کند.
 
+## حمایت
+TRON:
+TUnX9wBWzhD2AK9GqB9FJekKaxCvYJNh18
+
+Nowpayment:
+https://nowpayments.io/donation/pingplas
+
+
 ## ✨ امکانات اصلی
 
 - 🧩 دریافت لینک `vless://` یا فایل JSON کامل Xray
