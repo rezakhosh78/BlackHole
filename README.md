@@ -9,6 +9,14 @@ and WebSocket/XHTTP path unchanged.
 > app requires Administrator access because packet processing uses system-level
 > components.
 
+## Support
+TRON:
+TUnX9wBWzhD2AK9GqB9FJekKaxCvYJNh18
+
+Nowpayment:
+https://nowpayments.io/donation/pingplas
+
+
 ## ✨ Main Features
 
 - 🧩 Import a `vless://` link or a full Xray JSON config
